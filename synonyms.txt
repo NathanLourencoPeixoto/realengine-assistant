@@ -1,0 +1,113 @@
+# The Assistant's synonyms (tools/assistant_pack.py): words on a line mean the same to the search, in any language.
+# (Accents and case don't matter; the search also cuts plurals and verb endings.) Formal, informal, abbreviations and code.
+
+# --- the game's things ---
+pular, pulo, saltar, salto, jump, jumping, jumps, saltito
+personagem, character, jogador, player, protagonista, boneco, bonequinho, heroi, pawn, perso, avatar, persona
+inimigo, enemy, monstro, monster, oponente, vilao, adversario, mob, mobs, bicho, zumbi, zombie, boss, chefe
+npc, npcs, figurante, aldeao, villager
+porta, door, portao, gate, portinha
+abrir, open, abre, opening, abrindo
+objeto, obj, object, coisa, treco, troco, bagulho, item, peca, actor, ator, atores, actors
+moeda, coin, coins, coletavel, collectible, pickup, item coletavel
+arma, weapon, gun, espada, sword, tiro, atirar, shoot, shooting, disparar
+vida, health, hp, saude, life, lives, vidas
+dano, damage, hit, machucar, ferir, hurt, apanhar, golpe, atacar, attack
+pontos, score, pontuacao, placar, points, pts, recorde, highscore
+morrer, morte, die, death, dead, game over, gameover, perder
+reiniciar, restart, recomecar, respawn, renascer, reset, resetar, reload, tentar de novo
+salvar jogo, savegame, save, progresso, checkpoint, slot, carregar jogo, load
+menu, menu principal, main menu, tela inicial, title screen, start screen, tela de titulo
+pausar, pause, pausa, paused, congelar jogo
+teleporte, teleport, teleportar, tp, portal
+plataforma, platform, elevador, elevator, plataforma movel, moving platform
+patrulha, patrol, ronda, waypoint, waypoints, patrulhar, rota
+camera, cam, visao, view, ponto de vista, pov, terceira pessoa, primeira pessoa
+mouse, olhar, look, mira, aim, mirar
+teclado, keyboard, tecla, key, keys, input, entrada, comandos, controle, controles, gamepad, joystick, botao do teclado
+correr, run, sprint, velocidade, speed, rapido, devagar, lento, walk, andar, caminhar, mover personagem
+
+# --- the world ---
+porta, door
+luz, luzes, light, lights, iluminacao, lighting, lampada, lamp, claridade, escuro, dark, escuridao
+sombra, sombras, shadow, shadows
+ceu, sky, atmosfera, atmosphere, nuvem, nuvens, cloud, clouds
+neblina, nevoa, fog, fumaca, cerracao, mist, haze
+dia, noite, day, night, horario, sol, sun, lua, moon, ciclo, entardecer, sunset, amanhecer, sunrise
+chuva, clima, weather, tempo, vento, wind
+terreno, landscape, terrain, montanha, chao, ground, relevo, morro, colina, mapa grande
+vegetacao, foliage, grama, grass, arvore, arvores, tree, trees, plantas, mato, floresta, forest
+agua, water, lago, rio, oceano, mar
+material, materiais, materials, textura, texturas, texture, shader, shaders, cor, cores, color, colour, pintar, tinta
+som, sons, sound, sounds, audio, musica, music, efeito sonoro, sfx, barulho, trilha, soundtrack, bgm
+animacao, animacoes, animation, animations, anim, anims, animar, mexer o boneco
+fisica, physics, gravidade, gravity, colisao, collision, simulate, simular fisica, cair, queda
+multidao, crowd, multidoes, crowds, horda, exercito, muita gente, varios npcs
+cutscene, cinematica, sequencer, sequencia, sequence, filme, trailer, cinematic
+interface, ui, hud, widget, widgets, tela, botao, button, gui, texto na tela, barra de vida, healthbar
+
+# --- the editor ---
+importar, import, trazer, carregar modelo, importacao, abrir modelo
+exportar, export, empacotar, package, pacote, ship, distribuir, build, executavel, exe, compilar jogo, gerar exe, publicar jogo, lancar jogo
+projeto, project, jogo novo, novo projeto, template, modelo de projeto
+nivel, level, mapa, map, cena, scene, fase, stage, lvl
+salvar, save, gravar, guardar, ctrl s
+apagar, deletar, delete, remover, remove, excluir, del, tirar
+desfazer, undo, voltar, ctrl z, desfaz
+duplicar, duplicate, copiar, copy, clonar, clone, ctrl d
+mover, move, mexer, arrastar, posicionar, posicao, location, translate, deslocar, botar, colocar, por, put, place
+girar, rotate, rotacionar, rotacao, rotation, virar, rodar
+escala, scale, tamanho, size, aumentar, diminuir, redimensionar, maior, menor
+selecionar, select, selecao, selection
+testar, play, jogar, rodar o jogo, executar, pie, simular, run, rodar, testar o jogo
+configuracao, configuracoes, config, cfg, settings, preferencias, preferences, opcoes, options, ajustes
+atalho, atalhos, shortcut, shortcuts, tecla de atalho, hotkey, hotkeys
+assistente, assistant, ajuda, help, duvida
+tarefa, tarefas, task, tasks, carregando, loading, progresso, progress, barra de progresso, cartao, cartoes
+cancelar, cancel, parar, stop, abortar
+
+# --- performance and problems ---
+desempenho, performance, fps, lento, lerdo, travando, travado, travou, lag, laggando, otimizar, optimize, optimization, otimizacao, pesado, engasgando, stutter, quadros, frames, frame rate, framerate, gargalo, bottleneck
+pc, computador, maquina, computer, pc fraco, notebook
+gpu, placa de video, placa, video card, graphics card
+cpu, processador, processor
+erro, error, errors, bug, problema, falha, nao funciona, quebrado, broken, crash, crashou, fechou, deu ruim, bugado, bugou
+memoria, memory, ram, vram
+
+# --- code ---
+script, scripts, codigo, code, programar, programacao, programming, linguagem, coding, coder, dev
+blueprint, blueprints, bp, bps, nodes, nos, visual scripting, grafo, graph, node
+variavel, variaveis, variable, variables, var, let, campo, field, atributo, attribute, propriedade, property
+funcao, funcoes, function, functions, func, def, fn, metodo, method, methods, rotina
+classe, class, classes, extends, heranca, inheritance, pai, parent, herdar, inherit, subclasse
+evento, eventos, event, events, gatilho, callback, handler
+tick, update, todo quadro, every frame, cada frame, frame a frame, loop do jogo
+beginplay, begin play, inicio, start, awake, ready, ao comecar, quando comeca, onstart
+overlap, sobreposicao, encostar, tocar, encostou, colidir, trigger, onbeginoverlap, ontriggerenter, beginoverlap
+spawn, spawnar, criar ator, instanciar, instantiate, gerar objeto, spawnactor
+destruir, destroy, destroyactor, despawn, sumir, desaparecer
+timer, temporizador, delay, esperar, wait, aguardar, cronometro, segundos depois, settimer
+aleatorio, random, sorteio, randomico, randomly, sortear
+imprimir, print, printstring, log, console, debug, depurar, depuracao, mostrar valor
+condicao, if, else, elif, senao, se, branch, condition
+laco, loop, loops, for, while, repetir, repeticao, foreach, iterar, iterate
+array, arrays, lista, list, listas, vetor de itens, colecao, collection
+struct, structs, estrutura, structure, dataclass, typedef
+switch, match, case, escolha, select case
+texto, string, strings, str, interpolacao, interpolation, fstring, concatenar, format
+real, linguagem real, realscript
+csharp, cs, c sharp, dotnet, unity
+python, py
+c, linguagem c, ansi c
+api, referencia, documentacao, docs, documentation, reference, funcoes da engine
+jit, nativo, native, compilacao nativa, bytecode, vm, interpretador, interpreter
+ecs, entidade, entity, componente, component, arquetipo, archetype, data oriented, orientado a dados
+async, assincrono, asynchronous, thread, threads, worker, segundo plano, background
+replicacao, replication, rpc, rpcs, replicar, replicated, sincronizar, sync, netcode
+multiplayer, online, rede, network, steam, lan, servidor, server, coop, cooperativo, amigos, pvp
+tela de carregamento, carregamento, splash, loading screen, intro, abertura, tela inicial, tela de abertura
+quebrar, quebra, fratura, fracture, destruir, destrutivel, destructible, estilhacar, despedacar, pedacos, shatter
+exemplo, exemplos, demo, demos, demonstracao, sample, samples, jogo pronto, jogo de exemplo
+vidro, glass, transparente, transparent, translucido, translucent, opacidade, opacity
+idioma, lingua, language, traducao, translation, ingles, portugues, english, portuguese
+atualizar, atualizacao, update, updates, versao nova, new version, upgrade
