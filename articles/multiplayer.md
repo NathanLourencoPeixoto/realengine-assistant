@@ -8,6 +8,7 @@ Create Session (quem hospeda) | Find Sessions | Join Session | Replicação: Set
 ```
 - Sessões: **Create Session**, **Find Sessions** e **Join Session** (LAN ou Steam).
 - O que se move sozinho (Characters, física) já é replicado; o resto com **Set Replicates**, variáveis replicadas e RPCs (servidor, multicast, dono).
+- Senha, filtros, propriedades, vagas privadas, banir: [Sessões avançadas](article:advanced-sessions).
 - Steam: ligue em Configurações do Projeto e ponha o `steam_api64.dll` do Steamworks SDK ao lado do `.rproject`. [Abrir as Configurações do Projeto](open:project)
 --- en
 ```diagram steps
@@ -15,4 +16,5 @@ Create Session (the host) | Find Sessions | Join Session | Replication: Set Repl
 ```
 - Sessions: **Create Session**, **Find Sessions** and **Join Session** (LAN or Steam).
 - What moves by itself (Characters, physics) is replicated already; the rest with **Set Replicates**, replicated variables and RPCs (server, multicast, owner).
+- Password, filters, properties, private slots, bans: [Advanced sessions](article:advanced-sessions).
 - Steam: turn it on in Project Settings and put the Steamworks SDK's `steam_api64.dll` next to the `.rproject`. [Open Project Settings](open:project)

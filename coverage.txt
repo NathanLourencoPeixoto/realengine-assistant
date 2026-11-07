@@ -1,7 +1,7 @@
 # Each area of the engine (a notas-dev/<area>.md) and the Assistant's articles that explain it.
 # tools/assistant_pack.py fails when an area has no line here or names a missing article: a new feature goes into the
 # Assistant with it (RealEngine.md, "Como trabalhar aqui"). The API functions and the controls' tips enter by themselves.
-animacao: animation, animation-pro
+animacao: animation, animation-pro, skinning
 assistente: assistant-help
 async: background-tasks, async-api
 audio: sound, audio-pro
@@ -9,7 +9,7 @@ blueprints: blueprints-basics, blueprint-functions, blueprint-communication, blu
 content-browser: content-drawer, asset-concept
 debug-viewer: debug-viewer
 demos: demo-games
-editor: editor-layout, shortcuts, move-actors, select-actors, undo-duplicate, play-in-editor, viewport-navigation, levels-save, snapping-grid
+editor: editor-layout, shortcuts, move-actors, select-actors, undo-duplicate, play-in-editor, viewport-navigation, levels-save, snapping-grid, graph-menu
 escala: heavy-meshes, ecs-architecture
 fisica: physics, physics-push, fracture
 gi: gi-pro, lights
@@ -23,7 +23,7 @@ luz: lights, sky-fog, shadows-pro, many-lights
 marca: loading-screen
 materiais: materials, material-vs-texture, change-color, texture-streaming, glass-translucent
 multidao: crowds
-online: multiplayer, replication-pro, steam-pro, save-load
+online: multiplayer, advanced-sessions, replication-pro, steam-pro, save-load, multiplayer-lag
 projetos: create-project, project-settings
 prototipagem: prototyping
 render: performance, scalability, post-process, tsr-upscaling, glass-translucent, heavy-meshes
@@ -31,3 +31,8 @@ scripts: scripts-basics, real-language, csharp-guide, python-guide, c-guide, cod
 sequencer: sequencer, camera-actor
 servicos: report-bug, updates
 umg: game-ui
+particulas: particle-systems, particles-tlender
+ikrig: ik-rig, ragdoll
+veiculos: vehicles, vehicle-parts, water-rails
+procedural: procedural-worlds, procedural-facility
+android: android-export, touch-controls, android-performance, google-play
