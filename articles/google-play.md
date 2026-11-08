@@ -4,7 +4,7 @@ title: Publicar na Google Play (AAB) | Publish on Google Play (AAB)
 keys: google play, play store, publicar celular, publish android, aab, android app bundle, bundle, play console, chave de upload, upload key, keystore, assinar, signing, version code, versao, sdk alvo, target sdk, api 36, 16 kb, asset pack, 200 mb, icone da loja, store icon, feature graphic, grafico de destaque, politica de privacidade, privacy policy, loja, store listing
 --- pt
 ```diagram steps
-Configurações do Projeto > Android: nome do pacote seu (com.suaempresa.jogo) | Criar Chave de Upload (uma vez; guarde uma cópia) | Compilar > Empacotar para Google Play (AAB) | Play Console > Criar app > envie o .aab | Página da loja: as imagens de <jogo>_GooglePlay
+Configurações do Projeto > Android: nome do pacote seu (com.suaempresa.jogo) | Criar Chave de Upload (uma vez; guarde uma cópia) | Compilar > Empacotar para Google Play Store: AAB | Play Console > Criar app > envie o .aab | Página da loja: as imagens de <jogo>_GooglePlay
 ```
 ## O que sai
 - **`<jogo>.aab`**: o Android App Bundle que o Play Console recebe, assinado com a sua **chave de upload**. A Google assina de novo para cada aparelho (Play App Signing).
@@ -24,7 +24,7 @@ Na mesma página das Configurações, cada item fica verde quando está certo: n
 **Nunca perca a chave de upload** (`Build/Android/upload.keystore` e o `.pass` no projeto). Se perder, o suporte da Google pode trocar a chave, mas demora. Linha de comando: `realengine --open Level.rlevel --package-play <pasta>`. Veja também [Exportar para Android](article:android-export).
 --- en
 ```diagram steps
-Project Settings > Android: your own package name (com.yourcompany.game) | Create Upload Key (once; keep a copy) | Build > Package for Google Play (AAB) | Play Console > Create app > upload the .aab | Store listing: the pictures in <game>_GooglePlay
+Project Settings > Android: your own package name (com.yourcompany.game) | Create Upload Key (once; keep a copy) | Build > Package for Google Play Store: AAB | Play Console > Create app > upload the .aab | Store listing: the pictures in <game>_GooglePlay
 ```
 ## What comes out
 - **`<game>.aab`**: the Android App Bundle the Play Console takes, signed with your **upload key**. Google signs it again for each device (Play App Signing).

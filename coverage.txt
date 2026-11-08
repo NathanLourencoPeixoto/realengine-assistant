@@ -9,7 +9,7 @@ blueprints: blueprints-basics, blueprint-functions, blueprint-communication, blu
 content-browser: content-drawer, asset-concept
 debug-viewer: debug-viewer
 demos: demo-games
-editor: editor-layout, shortcuts, move-actors, select-actors, undo-duplicate, play-in-editor, viewport-navigation, levels-save, snapping-grid, graph-menu
+editor: editor-layout, shortcuts, move-actors, select-actors, undo-duplicate, play-in-editor, viewport-navigation, levels-save, snapping-grid, graph-menu, actor-icons
 escala: heavy-meshes, ecs-architecture
 fisica: physics, physics-push, fracture
 gi: gi-pro, lights
@@ -33,6 +33,10 @@ servicos: report-bug, updates
 umg: game-ui
 particulas: particle-systems, particles-tlender
 ikrig: ik-rig, ragdoll
-veiculos: vehicles, vehicle-parts, water-rails
+veiculos: vehicles, vehicle-parts, water-rails, vehicle-from-mesh
 procedural: procedural-worlds, procedural-facility
 android: android-export, touch-controls, android-performance, google-play
+agua: rain-water
+tecido: cloth
+diagnostico-gpu-tecido: cloth
+xr: vr-ar
