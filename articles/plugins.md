@@ -1,7 +1,7 @@
 id: plugins
 kind: recipe
 title: Plugins: nós e ferramentas em código nativo | Plugins: nodes and tools in native code
-keys: plugin, plugins, criar plugin, make a plugin, new plugin, novo plugin, dll, extensao, extension, modulo nativo, native module, codigo nativo, native code, c plugin, blueprint function library, biblioteca de funcoes, nos novos, new nodes, edit plugins, ativar plugin, enable plugin, desativar plugin, disable plugin, plugin.json, sdk
+keys: gameplay framework, desligar modulos, desativar inventario, desativar interacao, plugin embutido, built-in, plugin, plugins, criar plugin, make a plugin, new plugin, novo plugin, dll, extensao, extension, modulo nativo, native module, codigo nativo, native code, c plugin, blueprint function library, biblioteca de funcoes, nos novos, new nodes, edit plugins, ativar plugin, enable plugin, desativar plugin, disable plugin, plugin.json, sdk
 --- pt
 ```diagram steps
 Editar > Plugins > Novo Plugin...: escreva o nome (ex.: MeuPlugin)
@@ -28,6 +28,9 @@ RE_PLUGIN_EXPORT int re_plugin_init(const RePluginApi* api) {
     return 0;
 }
 ```
+
+## Gameplay Framework (plugin embutido)
+Os módulos de jogo prontos (Vida e dano, Inventário, Interação, Menu de Pausa e Opções, Salvar o Progresso, Diálogo, Missões, Regras de Jogo, Habilidades e o HUD) formam o plugin **Gameplay Framework**, que vem ligado. Em **Editar > Plugins** você o desliga para o projeto: os nós, componentes, atores (Pickup, Checkpoint, Game Rules, portas e baús) e assets (Diálogo, Missão) somem dos menus, e o Play não cria nada dele sozinho (o Interactor do jogador, o aviso de interação, o HUD, a tecla do menu de pausa). Por ser da engine, liga e desliga na hora, sem reiniciar. A escolha fica em `Config/Plugins.ini` e vai junto no jogo empacotado.
 --- en
 ```diagram steps
 Edit > Plugins > New Plugin...: type the name (e.g. MyPlugin)
@@ -54,3 +57,6 @@ RE_PLUGIN_EXPORT int re_plugin_init(const RePluginApi* api) {
     return 0;
 }
 ```
+
+## Gameplay Framework (built-in plugin)
+The ready-made game modules (Health and damage, Inventory, Interaction, Pause Menu and Options, Save Progress, Dialogue, Quests, Game Rules, Abilities and the HUD) make up the **Gameplay Framework** plugin, on by default. In **Edit > Plugins** you turn it off for the project: its nodes, components, actors (Pickup, Checkpoint, Game Rules, doors and chests) and assets (Dialogue, Quest) leave the menus, and Play makes none of its pieces by itself (the player's Interactor, the interaction prompt, the HUD, the pause menu's key). Being the engine's, it turns on and off at once, no restart. The choice lives in `Config/Plugins.ini` and goes with the packaged game.

@@ -1,7 +1,7 @@
 id: render-styles
 kind: howto
 title: Estilo de render: estilizado, realista, fotorrealista, vídeo-realista | Render style: stylized, realistic, photorealistic, video-realistic
-keys: contorno, outline, toon shading, faixas, bands, stop motion, animacao em dois, on twos, sombra colorida, cel shading, preset estilizado, cara de filmado, parecer filmado, camera real, cara de cinema, cara de video, visual realista, estilo de render, render style, estilizado, stylized, toon, cel, realista, fotorrealista, photoreal, video realista, video realistic, agx, aces, tonemapper, tone mapping, mapeamento de tom, camera fisica, halation, grao de filme, film grain, distorcao de lente, lens distortion, flashback, camera de seguranca, bodycam, set render style
+keys: ruido, noise, granulado, grain, grao, denoise, reduzir ruido, ghosting, contorno, outline, toon shading, faixas, bands, stop motion, animacao em dois, on twos, sombra colorida, cel shading, preset estilizado, cara de filmado, parecer filmado, camera real, cara de cinema, cara de video, visual realista, estilo de render, render style, estilizado, stylized, toon, cel, realista, fotorrealista, photoreal, video realista, video realistic, agx, aces, tonemapper, tone mapping, mapeamento de tom, camera fisica, halation, grao de filme, film grain, distorcao de lente, lens distortion, flashback, camera de seguranca, bodycam, set render style
 --- pt
 ```diagram steps
 Configurações do Projeto > Rendering > Render Style
@@ -21,6 +21,7 @@ O **estilo** diz **como o quadro fica**; a **escalabilidade** (Baixo a Épico) d
 ```blueprint
 Event BeginPlay -> Set Render Style ( Style = 3 )
 ```
+- **Ruído na imagem:** o Vídeo-realista põe **grão de filme** (muda a cada quadro, parece ruído). **Grão de Filme** (Configurações do Projeto > Rendering) regula: 0 deixa a imagem limpa. **Denoise** (Automático / Ligado / Desligado) filtra o ruído da luz por raio em qualquer estilo, só com o histórico do mesmo objeto, mesma direção e mesma profundidade (sem ghosting); precisa de ray tracing.
 --- en
 ```diagram steps
 Project Settings > Rendering > Render Style
@@ -40,3 +41,4 @@ The **style** says **how the frame looks**; the **scalability** (Low to Epic) sa
 ```blueprint
 Event BeginPlay -> Set Render Style ( Style = 3 )
 ```
+- **Noise in the picture:** Video-realistic adds **film grain** (it changes every frame, it reads as noise). **Film Grain** (Project Settings > Rendering) sets it: 0 gives a clean picture. **Denoise** (Automatic / On / Off) filters the traced light's noise in any style, keeping only the history of the same object, facing the same way, at the same depth (no ghosting); it needs ray tracing.
