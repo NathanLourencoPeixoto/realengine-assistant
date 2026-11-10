@@ -1,7 +1,7 @@
 id: package-game
 kind: howto
 title: Empacotar o jogo | Package the game
-keys: empacotar, exportar, exe, executavel, distribuir, publicar, build final, package, ship, jogo pronto, steam
+keys: package the game, package game, packaging, empacotar o jogo, shipping, content.rpak, pacote unico, single file, arquivo unico, empacotar, exportar, exe, executavel, distribuir, publicar, build final, package, ship, jogo pronto, steam
 --- pt
 ```diagram steps
 Compilar > Empacotar Jogo | Escolher a pasta de saída | Package Game | Cartão no canto (Cancelar) | A pasta abre com o .exe
@@ -11,6 +11,8 @@ Compilar > Empacotar Jogo | Escolher a pasta de saída | Package Game | Cartão 
 3. A cópia roda em segundo plano (um cartão no canto inferior direito, com Cancelar); a pasta abre no Explorer quando termina.
 
 O resultado é uma pasta com o `.exe` do jogo, o nível, a luz assada e os assets usados.
+
+**Shipping:** marcado, o pacote sai sem o Debug Viewer e com todo o conteúdo num arquivo só, `Content.rpak` (comprimido e conferido ao abrir: um arquivo alterado não abre). Fica mais limpo para distribuir e o jogo lê tudo de lá.
 --- en
 ```diagram steps
 Build > Package Game | Pick the output folder | Package Game | A card at the corner (Cancel) | The folder opens with the .exe
@@ -20,3 +22,5 @@ Build > Package Game | Pick the output folder | Package Game | A card at the cor
 3. The copy runs in the background (a card at the bottom right, with Cancel); the folder opens in Explorer when it's done.
 
 The result is a folder with the game's `.exe`, the level, its baked light and the assets used.
+
+**Shipping:** checked, the package comes without the Debug Viewer and with all its content in a single file, `Content.rpak` (compressed and checked when it opens: a tampered file won't open). Cleaner to distribute, and the game reads everything from it.

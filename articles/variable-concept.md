@@ -5,10 +5,10 @@ keys: variavel, variaveis, tipo, tipos, int, float, bool, string, vector, rotato
 --- pt
 Uma variável guarda um valor do ator:
 - **Bool** (sim/não), **Integer** (inteiro), **Float** (com vírgula), **String** (texto), **Vector** (x, y, z), **Rotator** (pitch, yaw, roll), **Actor** (outro ator), arrays e structs.
-- **Instance Editable** (`@editable` em Real, `[Editable]` em C#): o valor aparece no Details de cada ator, para ajustar sem mexer no código.
+- **Instance Editable** (`@editable` em Real, `[Editable]` em C#): o valor aparece no Details de cada ator, para ajustar sem mexer no código. Cada ator guarda o seu (salvo no nível); a **seta amarela** volta ao padrão da classe.
 - Em código: `var vida = 100` (Real), `int vida = 100;` (C#/C), `vida = 100` (Python).
 --- en
 A variable keeps a value of the actor:
 - **Bool** (yes/no), **Integer**, **Float** (decimals), **String** (text), **Vector** (x, y, z), **Rotator** (pitch, yaw, roll), **Actor** (another actor), arrays and structs.
-- **Instance Editable** (`@editable` in Real, `[Editable]` in C#): the value shows in each actor's Details, to tune it without touching the code.
+- **Instance Editable** (`@editable` in Real, `[Editable]` in C#): the value shows in each actor's Details, to tune it without touching the code. Each actor keeps its own (saved in the level); the **yellow arrow** goes back to the class default.
 - In code: `var health = 100` (Real), `int health = 100;` (C#/C), `health = 100` (Python).

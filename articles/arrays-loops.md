@@ -1,7 +1,7 @@
 id: arrays-loops
 kind: howto
 title: Arrays e laços | Arrays and loops
-keys: array, arrays, lista, list, laco, loop, for, foreach, while, percorrer lista, adicionar na lista, add, remove, contains, length, len, indice
+keys: array, arrays, lista, list, laco, loop, for, foreach, while, percorrer lista, adicionar na lista, add, remove, contains, length, len, indice, for i in, for i in 0..10, range, intervalo, 0..10
 --- pt
 ```real
 var xs = [3, 4, 5]

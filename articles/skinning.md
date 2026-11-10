@@ -13,7 +13,7 @@ Um personagem importado com **armature** vira um **Skeletal Mesh** com **peles**
 - Malhas presas a um osso sem pesos (chapéu, arma) entram na pele com peso 1 nesse osso.
 
 ## Personagem importado antes desta versão
-Os personagens antigos eram **cortados em partes rígidas por osso**: dava roupa "cortada" e emendas que piscavam. Importe o arquivo de novo (**Arquivo > Importar para o Nível...**, a mesma pasta) para ele ganhar as peles. A reimportação refaz também os materiais do arquivo.
+Os personagens antigos eram **cortados em partes rígidas por osso**: dava roupa "cortada" e emendas que piscavam. O editor avisa no Details do ator. Clique com o botão direito no Skeletal Mesh no Content Browser > **Reimportar** (ou o botão **Reimportar** no Details): ele lê o arquivo de origem de novo para a mesma pasta e os atores já colocados ganham as peles na hora. Nos personagens importados antes de existir o Reimportar, o editor pergunta onde está o arquivo (uma vez; depois ele lembra).
 
 ## Desempenho
 Medido com a Delight (5 peles, 57 mil vértices) dançando, em 1440p: **495 fps**, 0,004 ms de CPU. A linha `Skins:` do `--bench` mostra quantas peles foram dobradas no último quadro.
@@ -28,7 +28,7 @@ A character imported with an **armature** becomes a **Skeletal Mesh** with **ski
 - Meshes held by a bone without weights (a hat, a weapon) go into the skin with weight 1 on that bone.
 
 ## A character imported before this version
-Older characters were **cut into rigid parts by bone**: clothes looked "cut" and seams flickered. Import the file again (**File > Import Into Level...**, the same folder) to give it skins. Reimporting also rebuilds the file's materials.
+Older characters were **cut into rigid parts by bone**: clothes looked "cut" and seams flickered. The editor warns in the actor's Details. Right click the Skeletal Mesh in the Content Browser > **Reimport** (or the **Reimport** button in Details): it reads the source file again into the same folder and the actors already placed get the skins at once. For characters imported before Reimport existed, the editor asks where the file is (once; then it remembers).
 
 ## Performance
 Measured with the Delight (5 skins, 57 thousand vertices) dancing at 1440p: **495 fps**, 0.004 ms of CPU. The `Skins:` line of `--bench` shows how many skins were bent in the last frame.
