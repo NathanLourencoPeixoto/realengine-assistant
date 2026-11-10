@@ -1,7 +1,7 @@
 id: water-rails
 kind: recipe
 title: Água e trilhos: barcos flutuando, trens no trilho | Water and rails: boats afloat, trains on track
-keys: agua, water, water body, lago, lake, mar, sea, ondas, waves, correnteza, current, flutuar, float, boiar, trilho, rail, ferrovia, railway, trem, train, vagao, wagon, engatar, couple, locomotiva, locomotive, spline, bitola, gauge
+keys: spline, pontos da spline, editar rio, editar trilho, alt arrastar, agua, water, water body, lago, lake, mar, sea, ondas, waves, correnteza, current, flutuar, float, boiar, trilho, rail, ferrovia, railway, trem, train, vagao, wagon, engatar, couple, locomotiva, locomotive, spline, bitola, gauge
 --- pt
 ```diagram steps
 Adicionar Rápido > Veículos > Corpo d'Água (ou Trilho) | Água: o tamanho é a escala; ondas e correnteza nos Detalhes | Trilho: os pontos nos Detalhes | Trem: Detalhes > Rail com o nome do trilho; vagões: Engatar em
@@ -32,6 +32,7 @@ class Locomotive extends Actor
     event BeginPlay()
         SetThrottleInput(0.6)
 ```
+- **Editar no viewport:** com o rio ou o trilho selecionado, os pontos da spline aparecem como bolinhas amarelas. Arraste para mover (Shift: sobe e desce), **Alt** + arrastar cria um ponto novo, botão direito no ponto: adicionar ou apagar.
 --- en
 ```diagram steps
 Quick Add > Vehicles > Water Body (or Rail) | Water: its size is its scale; waves and current in its Details | Rail: its points in its Details | A train: Details > Rail with the rail's name; wagons: Couple To
@@ -62,3 +63,4 @@ class Locomotive extends Actor
     event BeginPlay()
         SetThrottleInput(0.6)
 ```
+- **Edit in the viewport:** with the river or the rail selected, the spline's points show as yellow dots. Drag to move (Shift: up and down), **Alt** + drag makes a new point, right button on a point: add or delete.
