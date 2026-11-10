@@ -1,7 +1,7 @@
 id: blueprints-basics
 kind: howto
 title: Blueprints: o básico | Blueprints: the basics
-keys: blueprint, nos, programacao visual, evento, begin play, tick, variavel, funcao, classe, grafo, visual scripting
+keys: blueprint, nos, programacao visual, evento, begin play, tick, variavel, funcao, classe, grafo, visual scripting, pino de asset, asset pin, sequencia por variavel, som por variavel, trocar sequencia, modular, variavel no lugar do valor
 --- pt
 ```diagram steps
 Adicionar > Blueprint Class | Escolher o pai | Event Graph: eventos e nós | Compile | Arrastar para o nível
@@ -13,6 +13,8 @@ Adicionar > Blueprint Class | Escolher o pai | Event Graph: eventos e nós | Com
 5. **Compile** e arraste a classe para o nível.
 
 Prefere código? Veja [Scripts](article:scripts-basics).
+- **Tudo é pino:** o asset ou nome que um nó usa (a **Sequence** do Play Sequence, o **Sound** do Play Sound, o **System** das partículas, o **Widget Name**, a **Key Name** do Blackboard, o **Montage**...) é também um **pino de entrada** do tipo Name: o valor do Details aparece nele, e ligando uma variável (Name ou String) o nó usa o asset que ela tiver na hora. O delegate do Custom Event fica no **título** do nó, como na Unreal.
+
 --- en
 ```diagram steps
 Add > Blueprint Class | Pick the parent | Event Graph: events and nodes | Compile | Drag into the level
@@ -24,3 +26,4 @@ Add > Blueprint Class | Pick the parent | Event Graph: events and nodes | Compil
 5. **Compile** and drag the class into the level.
 
 Prefer code? See [Scripts](article:scripts-basics).
+- **Everything is a pin:** the asset or name a node uses (Play Sequence's **Sequence**, Play Sound's **Sound**, the particles' **System**, the **Widget Name**, the Blackboard's **Key Name**, the **Montage**...) is also a Name **input pin**: the Details value shows in it, and wiring a variable (Name or String) makes the node use whatever asset it holds then. The Custom Event's delegate sits in the node's **title**, as in Unreal.

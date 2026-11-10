@@ -1,7 +1,7 @@
 id: graph-menu
 kind: howto
 title: Menu do botão direito nos gráficos | The right-click menu in graphs
-keys: estilo dos nos, estilo dos fios, graph style, node style, wire style, neon, vidro, circuito, arrastar variavel, arrastar funcao, arrastar componente, drag variable, drag function, drag component, get component, categorias, caixas, botao direito, right click, menu de nos, node menu, all actions, todas as acoes, recentes, recent, recomendados, recommended, sugestao de no, sugestões, historico, history, context sensitive, sensivel ao contexto, adicionar no, add node, blueprint, animgraph, material, behavior tree, sound cue, particulas
+keys: estilo dos nos, estilo dos fios, graph style, node style, wire style, neon, vidro, circuito, arrastar variavel, arrastar funcao, arrastar componente, drag variable, drag function, drag component, get component, categorias, caixas, botao direito, right click, menu de nos, node menu, all actions, todas as acoes, recentes, recent, recomendados, recommended, sugestao de no, sugestões, historico, history, context sensitive, sensivel ao contexto, adicionar no, add node, blueprint, animgraph, material, behavior tree, sound cue, particulas, tamanho do menu, menu gigante, menu pequeno, zoom do menu, busca de material, buscar no material, material search
 --- pt
 ```diagram steps
 Botão direito no gráfico (ou solte um fio no vazio) | Recentes: as 2 últimas que você usou | Recomendados: 2 que conectam com o que você está fazendo | Depois, só as ações que este gráfico aceita
@@ -16,6 +16,9 @@ Em todo gráfico (Blueprint, Função, Macro, Construction Script, AnimGraph, Ma
 - As ações ficam em **caixas por categoria que abrem e fecham** (Flow Control, Utilities > Time...), como na Unreal; buscando, as caixas abrem sozinhas com só o que bate.
 - **Arrastar do My Blueprint:** variáveis (Ctrl Get, Alt Set), **funções** (vira a chamada), **macros** e, do painel Components, um **componente** (vira *Get <componente>*).
 - **Estilo dos grafos:** em **Editar > Preferências do Editor > Estilo dos Grafos**, escolha o estilo dos nós (Padrão, Plano, Minimalista, Vidro, Neon) e, separado, o dos fios (Curva, Reto, Circuito, Brilho, Fluxo), cada um por uma prévia; muda na hora.
+- O menu do botão direito tem **sempre o mesmo tamanho**, qualquer que seja o zoom do grafo.
+- **Material:** o menu de nós do material tem **busca**: digite logo ao abrir ("tex img" acha Image Texture), Enter cria o primeiro.
+
 --- en
 ```diagram steps
 Right click the graph (or drop a wire on empty space) | Recent: the last 2 you used | Recommended: 2 that connect with what you are doing | Then only the actions this graph takes
@@ -30,3 +33,5 @@ In every graph (Blueprint, Function, Macro, Construction Script, AnimGraph, Mate
 - Actions sit in **category boxes that open and close** (Flow Control, Utilities > Time...), as in Unreal; searching opens the boxes with only the matches.
 - **Drag from My Blueprint:** variables (Ctrl Get, Alt Set), **functions** (a call), **macros** and, from the Components panel, a **component** (a *Get <component>*).
 - **Graph style:** in **Edit > Editor Preferences > Graph Style**, pick the nodes' style (Default, Flat, Minimal, Glass, Neon) and, apart, the wires' (Curve, Straight, Circuit, Glow, Flow), each from a preview; it changes at once.
+- The right-click menu is **always the same size**, whatever the graph's zoom.
+- **Material:** the material's node menu has a **search**: type as it opens ("tex img" finds Image Texture), Enter makes the first one.

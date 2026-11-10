@@ -1,7 +1,7 @@
 id: skinning
 kind: concept
 title: Skinning suave: roupas e corpos que dobram | Smooth skinning: clothes and bodies that bend
-keys: skinning, skin, pele, pesos, weights, vertex groups, grupos de vertices, vestido cortado, roupa cortada, roupa rasgada, costura, emenda, seam, dress, cloth, personagem cortado, skin cache, deformar, deform, skeletal mesh, reimportar, reimport, camadas de roupa, roupa atravessando
+keys: skinning, skin, pele, pesos, weights, vertex groups, grupos de vertices, vestido cortado, roupa cortada, roupa rasgada, costura, emenda, seam, dress, cloth, personagem cortado, skin cache, deformar, deform, skeletal mesh, reimportar, reimport, camadas de roupa, roupa atravessando, visualizador vazio, skeletal mesh vazio, preview vazio, nao aparece no editor, empty viewer
 --- pt
 ```diagram steps
 Tlender / glTF / FBX (pesos por vértice) | Importar: uma pele por material (4 ossos por vértice) | Animação: paleta dos ossos | GPU dobra os vértices a cada pose | Sombras e GI por raio na pele dobrada
@@ -17,6 +17,8 @@ Os personagens antigos eram **cortados em partes rígidas por osso**: dava roupa
 
 ## Desempenho
 Medido com a Delight (5 peles, 57 mil vértices) dançando, em 1440p: **495 fps**, 0,004 ms de CPU. A linha `Skins:` do `--bench` mostra quantas peles foram dobradas no último quadro.
+- **Editores:** o Skeletal Mesh, as animações, o Blend Space e o Anim Graph mostram a pele deformada pela pose (antes só as partes antigas apareciam e a Delight ficava vazia).
+
 --- en
 ```diagram steps
 Tlender / glTF / FBX (per-vertex weights) | Import: one skin per material (4 bones per vertex) | Animation: the bones' palette | The GPU bends the vertices each pose | Ray traced shadows and GI on the bent skin
@@ -32,3 +34,4 @@ Older characters were **cut into rigid parts by bone**: clothes looked "cut" and
 
 ## Performance
 Measured with the Delight (5 skins, 57 thousand vertices) dancing at 1440p: **495 fps**, 0.004 ms of CPU. The `Skins:` line of `--bench` shows how many skins were bent in the last frame.
+- **Editors:** the Skeletal Mesh, the animations, the Blend Space and the Anim Graph show the skin bent by the pose (before, only the old parts showed and the Delight was empty).

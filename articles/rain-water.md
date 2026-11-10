@@ -1,7 +1,7 @@
 id: rain-water
 kind: howto
 title: Chuva, poças, córregos e oceano | Rain, puddles, streams and ocean
-keys: chuva, rain, chover, tempestade, storm, garoa, drizzle, molhado, wet, poca, puddle, poças, enchente, flood, alagado, rio, river, corrego, stream, escorrer, runoff, gotas, drops, respingo, splash, oceano, ocean, mar, sea, ondas, waves, espuma, foam, lago, lake, piscina, pool, agua, water, fft, barco flutuando, boat float, rastro, wake, neve, snow, nevar, nevasca, snowfall, flocos, flakes, inverno, winter, derreter, melt, cobertura de neve, snow cover, agua transparente, transparent water, raso, shallow, fundo do lago, lake bottom, espuma na margem, shore foam, praia, beach, refracao, refraction, causticas, caustics, luz no fundo da piscina, pool light lines, textura no fundo, pegadas, footprints, rastro na neve, snow trail, pisar na neve
+keys: escoamento, escorrer agua, runoff, agua escorrendo, molhar o plano, chuva, rain, chover, tempestade, storm, garoa, drizzle, molhado, wet, poca, puddle, poças, enchente, flood, alagado, rio, river, corrego, stream, escorrer, runoff, gotas, drops, respingo, splash, oceano, ocean, mar, sea, ondas, waves, espuma, foam, lago, lake, piscina, pool, agua, water, fft, barco flutuando, boat float, rastro, wake, neve, snow, nevar, nevasca, snowfall, flocos, flakes, inverno, winter, derreter, melt, cobertura de neve, snow cover, agua transparente, transparent water, raso, shallow, fundo do lago, lake bottom, espuma na margem, shore foam, praia, beach, refracao, refraction, causticas, caustics, luz no fundo da piscina, pool light lines, textura no fundo, pegadas, footprints, rastro na neve, snow trail, pisar na neve, chuva inclinada, vento, chuva com angulo, beiral, goteira, goteiras, drip, drips, borda molhada, quadrados molhados, wet edge
 --- pt
 ```diagram steps
 Adicionar Rápido > Chuva (o ator Rain) | Detalhes: Intensidade da Chuva, Molhado, Poças, Escoamento | Adicionar Rápido > Oceano (ou Water Body com Ocean ligado) | Play: barcos flutuam nas ondas, o que se mexe deixa rastro
@@ -26,6 +26,11 @@ Ligue **Snow** no mesmo ator Rain:
 - **Barcos** flutuam nas ondas grandes; **veículos, personagens e corpos com física** fazem **anéis e rastros** na água (Interação).
 - A chuva também faz anéis no oceano e nos lagos.
 - **Água transparente** (Alto e Épico, com ray tracing): onde é raso o **fundo aparece** através da água, sumindo com a profundidade conforme a **Transparência** (o vermelho some primeiro: verde-azulado no raso, azul no fundo). **Espuma na Margem**: espuma branca nas praias e em volta de pedras e postes dentro da água. Cada lago tem a sua cor, transparência e espuma. O fundo aparece com a **textura** do material dele (e as linhas do M_Grid), e o sol forma **cáusticas**: a rede de linhas claras que as ondas desenham no fundo, nítidas no raso e espalhadas no fundo. ~0,35 ms a mais no Épico com água rasa na tela toda.
+- **Chuva com vento:** a chuva cai inclinada pelo **vento** (Wind Speed e Direction do ator Rain) e o que ela alcança fica molhado: debaixo de um beiral do lado do vento molha, do outro lado fica seco. O lado de trás de uma parede fica seco.
+- **Borda suave:** a passagem de molhado para seco é gradual (alguns centímetros, como os respingos fazem), sem quadrados nem faixa marcada.
+- **Escoamento:** a água escorre pela superfície como a de verdade: desce as rampas e telhados até a borda (e cai) ou até um lugar plano, onde se espalha e junta nas partes mais baixas. Por onde ela passa fica molhado, mais quanto mais água passa, e continua molhado enquanto ainda escorre depois da chuva.
+- **Goteiras:** bordas que juntam água (telhado, parapeito, galho) pingam gotas até o chão, e a água que escorre delas molha onde cai.
+
 --- en
 ```diagram steps
 Quick Add > Rain (the Rain actor) | Details: Rain Intensity, Wetness, Puddles, Flow | Quick Add > Ocean (or a Water Body with Ocean on) | Play: boats float on the waves, what moves leaves a wake
@@ -50,3 +55,7 @@ Turn on **Snow** on the same Rain actor:
 - **Boats** float on the big waves; **vehicles, characters and physics bodies** make **rings and wakes** (Interaction).
 - The rain makes rings on the ocean and the lakes too.
 - **Transparent water** (High and Epic, with ray tracing): where it is shallow the **bottom shows** through the water, fading with the depth by its **Clarity** (red goes first: green-blue in the shallows, blue deeper). **Shore Foam**: white water on beaches and around rocks and posts standing in it. Each lake has its own color, clarity and foam. The bottom shows with its material's **texture** (and the M_Grid's lines), and the sun makes **caustics**: the net of bright lines the waves draw on the bottom, sharp in the shallows and spread out deeper. ~0.35 ms more on Epic with shallow water over the whole view.
+- **Rain with wind:** the rain falls slanted by the **wind** (the Rain actor's Wind Speed and Direction) and what it reaches gets wet: under an eave on the windward side it wets, on the other side it stays dry. The back of a wall stays dry.
+- **Soft edge:** wet turns to dry gradually (a few centimeters, as the splashes do), with no squares or hard stripe.
+- **Runoff:** the water runs over the surface like real water: down ramps and roofs to the edge (and falls) or to a flat place, where it spreads and gathers in the low spots. Where it passes gets wet, more the more water passes, and stays wet while it still runs after the rain.
+- **Drips:** edges that gather water (a roof, a ledge, a branch) drip drops down to the ground, and the water running off them wets where it lands.

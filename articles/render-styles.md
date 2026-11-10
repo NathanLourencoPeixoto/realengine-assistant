@@ -1,7 +1,7 @@
 id: render-styles
 kind: howto
 title: Estilo de render: estilizado, realista, fotorrealista, vídeo-realista | Render style: stylized, realistic, photorealistic, video-realistic
-keys: ruido, noise, granulado, grain, grao, denoise, reduzir ruido, ghosting, contorno, outline, toon shading, faixas, bands, stop motion, animacao em dois, on twos, sombra colorida, cel shading, preset estilizado, cara de filmado, parecer filmado, camera real, cara de cinema, cara de video, visual realista, estilo de render, render style, estilizado, stylized, toon, cel, realista, fotorrealista, photoreal, video realista, video realistic, agx, aces, tonemapper, tone mapping, mapeamento de tom, camera fisica, halation, grao de filme, film grain, distorcao de lente, lens distortion, flashback, camera de seguranca, bodycam, set render style
+keys: ruido, noise, granulado, grain, grao, denoise, reduzir ruido, ghosting, contorno, outline, toon shading, faixas, bands, stop motion, animacao em dois, on twos, sombra colorida, cel shading, preset estilizado, cara de filmado, parecer filmado, camera real, cara de cinema, cara de video, visual realista, estilo de render, render style, estilizado, stylized, toon, cel, realista, fotorrealista, photoreal, video realista, video realistic, agx, aces, tonemapper, tone mapping, mapeamento de tom, camera fisica, halation, grao de filme, film grain, distorcao de lente, lens distortion, flashback, camera de seguranca, bodycam, set render style, opcoes do estilo, style options, remover ruido das sombras, shadow denoise, sombra com ruido, noisy shadows, vinheta, vignette, franjas, fringes, aberracao cromatica
 --- pt
 ```diagram steps
 Configurações do Projeto > Rendering > Render Style
@@ -22,6 +22,8 @@ O **estilo** diz **como o quadro fica**; a **escalabilidade** (Baixo a Épico) d
 Event BeginPlay -> Set Render Style ( Style = 3 )
 ```
 - **Ruído na imagem:** o Vídeo-realista põe **grão de filme** (muda a cada quadro, parece ruído). **Grão de Filme** (Configurações do Projeto > Rendering) regula: 0 deixa a imagem limpa. **Denoise** (Automático / Ligado / Desligado) filtra o ruído da luz por raio em qualquer estilo, só com o histórico do mesmo objeto, mesma direção e mesma profundidade (sem ghosting); precisa de ray tracing.
+- **Opções do Estilo** (Configurações do Projeto > Renderização, abaixo do Estilo de Render): **Remover Ruído das Sombras** (Baixo, Médio, Alto, Épico) filtra as sombras por raio das luzes locais numa janela maior e em mais quadros: no Épico ficam lisas, sem rastro. No **Video-realista**, cada efeito da lente tem o seu controle: **Distorção da Lente, Franjas da Lente, Halação e Vinheta** (1: como o estilo, 0: desligado). Lembre também do **Granulado** (0: imagem limpa).
+
 --- en
 ```diagram steps
 Project Settings > Rendering > Render Style
@@ -42,3 +44,4 @@ The **style** says **how the frame looks**; the **scalability** (Low to Epic) sa
 Event BeginPlay -> Set Render Style ( Style = 3 )
 ```
 - **Noise in the picture:** Video-realistic adds **film grain** (it changes every frame, it reads as noise). **Film Grain** (Project Settings > Rendering) sets it: 0 gives a clean picture. **Denoise** (Automatic / On / Off) filters the traced light's noise in any style, keeping only the history of the same object, facing the same way, at the same depth (no ghosting); it needs ray tracing.
+- **Style Options** (Project Settings > Rendering, under Render Style): **Shadow Denoise** (Low, Medium, High, Epic) filters the local lights' ray traced shadows over a wider window and more frames: Epic is smooth, with no ghosting. In **Video-realistic** each lens effect has its own control: **Lens Distortion, Lens Fringes, Halation and Vignette** (1: as the style, 0: off). Remember **Film Grain** too (0: a clean picture).

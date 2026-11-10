@@ -1,7 +1,7 @@
 id: material-pins-no-effect
 kind: concept
 title: Verniz, vidro, subsuperfície e os pinos "ainda sem efeito" | Coat, glass, subsurface and the "no effect yet" inputs
-keys: veludo, velvet, sheen, iridescencia, iridescence, bolha de sabao, soap bubble, pelicula fina, thin film, sem efeito, ainda sem efeito, pino cinza, entrada cinza, verniz, clearcoat, coat, transmissao, transmission, vidro, subsurface, subsuperficie, pele, anisotropico, anisotropic, metal escovado, brushed metal, sheen, aveludado, specular tint, thin film, ior, glossy, no effect yet, greyed input, pintura de carro, car paint
+keys: veludo, velvet, sheen, iridescencia, iridescence, bolha de sabao, soap bubble, pelicula fina, thin film, sem efeito, ainda sem efeito, pino cinza, entrada cinza, verniz, clearcoat, coat, transmissao, transmission, vidro, subsurface, subsuperficie, pele, anisotropico, anisotropic, metal escovado, brushed metal, sheen, aveludado, specular tint, thin film, ior, glossy, no effect yet, greyed input, pintura de carro, car paint, masked transmissao, cabelo transmissao, alpha e transmissao, hair transmission
 --- pt
 ```diagram steps
 Principled BSDF: os pinos com valor (sem ligação)
@@ -22,6 +22,8 @@ O **Principled BSDF** tem todos os pinos do Blender. Por texel (podem receber te
 - **Ainda sem efeito**: Diffuse Roughness, Coat Normal e os pinos de Subsurface IOR/Anisotropy. O valor fica salvo para quando existirem.
 - Um glTF com verniz, transmissão ou sheen avisa no Registro de Saída ao importar.
 - No **Glossy BSDF** valem Color, Roughness e Normal. [Vidro e translúcidos](article:glass-translucent)
+- **Masked, Two Sided e Translucent:** os lóbulos extras (IOR, subsuperfície, especular, anisotropia, coat) funcionam em materiais **Opaque**, **Masked** e **Two Sided** (cabelo, folhas, cartões com coat ou brilho anisotrópico). Só no **Translucent** os pinos ficam cinza. Num **Masked** a **Transmissão** não vira vidro: o recorte pelo Alpha vale. Voltar a Transmissão para 0 devolve o material ao normal na hora.
+
 --- en
 ```diagram steps
 Principled BSDF: the inputs with a value (no link)
@@ -42,3 +44,4 @@ The **Principled BSDF** has all of Blender's inputs. Per texel (they take textur
 - **No effect yet**: Diffuse Roughness, Coat Normal and the Subsurface IOR/Anisotropy inputs. The value is saved for when they exist.
 - A glTF with clearcoat, transmission or sheen says so in the Output Log when imported.
 - In the **Glossy BSDF**, Color, Roughness and Normal count. [Glass and translucency](article:glass-translucent)
+- **Masked, Two Sided and Translucent:** the extra lobes (IOR, subsurface, specular, anisotropy, coat) work on **Opaque**, **Masked** and **Two Sided** materials (hair, leaves, cards with a coat or an anisotropic sheen). Only on **Translucent** are their pins grey. On a **Masked** one **Transmission** doesn't make it glass: the cut by the Alpha wins. Setting Transmission back to 0 brings the material back at once.
