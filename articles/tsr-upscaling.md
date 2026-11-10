@@ -20,6 +20,8 @@ O **TSR** (Temporal Super Resolution) desenha a cena numa resolução menor e re
 - **Cintila?** Duas superfícies no mesmo lugar (dois chãos em z 0, por exemplo) brigam pela profundidade, e o jitter mostra isso a cada quadro. Afaste uma delas 1 cm.
 - Para comparar: `REALENGINE_NO_TSR=1` desliga, `REALENGINE_TSR_SCALE=0.5` força a fração. Veja [Linha de comando](article:command-line).
 - O custo e a cintilação aparecem no Debug Viewer (F10). [Abrir](open:debug)
+- O **Modo de Upscaling** e a **Resolução Dinâmica** das Configurações do Projeto valem também no **viewport do editor**, não só no jogo.
+
 --- en
 ```diagram bars fps
 heavy, no TSR (MSAA 4x): 31
@@ -38,3 +40,4 @@ haunted house, TSR 75%: 147
 - **Flickering?** Two surfaces in one place (two floors at z 0, say) fight for the depth, and the jitter shows it every frame. Move one of them 1 cm.
 - To compare: `REALENGINE_NO_TSR=1` turns it off, `REALENGINE_TSR_SCALE=0.5` forces the share. See [Command line](article:command-line).
 - The cost and the flicker show in the Debug Viewer (F10). [Open](open:debug)
+- The Project Settings' **Upscaling Mode** and **Dynamic Resolution** apply in the **editor's viewport** too, not only in the game.

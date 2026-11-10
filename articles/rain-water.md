@@ -1,7 +1,7 @@
 id: rain-water
 kind: howto
 title: Chuva, poças, córregos e oceano | Rain, puddles, streams and ocean
-keys: escoamento, escorrer agua, runoff, agua escorrendo, molhar o plano, chuva, rain, chover, tempestade, storm, garoa, drizzle, molhado, wet, poca, puddle, poças, enchente, flood, alagado, rio, river, corrego, stream, escorrer, runoff, gotas, drops, respingo, splash, oceano, ocean, mar, sea, ondas, waves, espuma, foam, lago, lake, piscina, pool, agua, water, fft, barco flutuando, boat float, rastro, wake, neve, snow, nevar, nevasca, snowfall, flocos, flakes, inverno, winter, derreter, melt, cobertura de neve, snow cover, agua transparente, transparent water, raso, shallow, fundo do lago, lake bottom, espuma na margem, shore foam, praia, beach, refracao, refraction, causticas, caustics, luz no fundo da piscina, pool light lines, textura no fundo, pegadas, footprints, rastro na neve, snow trail, pisar na neve, chuva inclinada, vento, chuva com angulo, beiral, goteira, goteiras, drip, drips, borda molhada, quadrados molhados, wet edge
+keys: escoamento, escorrer agua, runoff, agua escorrendo, molhar o plano, chuva, rain, chover, tempestade, storm, garoa, drizzle, molhado, wet, poca, puddle, poças, enchente, flood, alagado, rio, river, corrego, stream, escorrer, runoff, gotas, drops, respingo, splash, oceano, ocean, mar, sea, ondas, waves, espuma, foam, lago, lake, piscina, pool, agua, water, fft, barco flutuando, boat float, rastro, wake, neve, snow, nevar, nevasca, snowfall, flocos, flakes, inverno, winter, derreter, melt, cobertura de neve, snow cover, agua transparente, transparent water, raso, shallow, fundo do lago, lake bottom, espuma na margem, shore foam, praia, beach, refracao, refraction, causticas, caustics, luz no fundo da piscina, pool light lines, textura no fundo, pegadas, footprints, rastro na neve, snow trail, pisar na neve, chuva inclinada, vento, chuva com angulo, beiral, goteira, goteiras, drip, drips, borda molhada, quadrados molhados, wet edge, quantidade de gotas, drop amount, mais chuva, more rain, velocidade da chuva, fall speed, chuva mais rapida, faster rain, personagem na chuva, character in the rain, pingos voando, flung drops, area seca, dry trail, parede espelhada, mirror wall, exclusao de agua, water body exclusion, area sem oceano, ilha, terra abaixo do mar, doca, buraco no oceano
 --- pt
 ```diagram steps
 Adicionar Rápido > Chuva (o ator Rain) | Detalhes: Intensidade da Chuva, Molhado, Poças, Escoamento | Adicionar Rápido > Oceano (ou Water Body com Ocean ligado) | Play: barcos flutuam nas ondas, o que se mexe deixa rastro
@@ -29,7 +29,11 @@ Ligue **Snow** no mesmo ator Rain:
 - **Chuva com vento:** a chuva cai inclinada pelo **vento** (Wind Speed e Direction do ator Rain) e o que ela alcança fica molhado: debaixo de um beiral do lado do vento molha, do outro lado fica seco. O lado de trás de uma parede fica seco.
 - **Borda suave:** a passagem de molhado para seco é gradual (alguns centímetros, como os respingos fazem), sem quadrados nem faixa marcada.
 - **Escoamento:** a água escorre pela superfície como a de verdade: desce as rampas e telhados até a borda (e cai) ou até um lugar plano, onde se espalha e junta nas partes mais baixas. Por onde ela passa fica molhado, mais quanto mais água passa, e continua molhado enquanto ainda escorre depois da chuva.
-- **Goteiras:** bordas que juntam água (telhado, parapeito, galho) pingam gotas até o chão, e a água que escorre delas molha onde cai.
+- **Goteiras:** bordas que juntam água (telhado, parapeito, degrau, galho) pingam: uma gota se forma pendurada na borda, cresce, cai esticando e respinga no chão, de novo e de novo.
+- **Quantidade e velocidade das gotas:** no ator Rain, **Quantidade de Gotas** (até 4x) e **Velocidade da Queda** (0,25x a 3x; mais rápida, inclina menos com o vento). A água no chão continua seguindo a Intensidade.
+- **O que se move na chuva:** um personagem andando, um carro ou um braço balançando não deixam rastro seco; o chão embaixo continua molhado. As gotas param em cima deles, e os pingos que saem deles voam na direção do movimento (do ator e da animação) e caem em arco.
+- Paredes molhadas ficam brilhantes, mas não viram espelho.
+- **Áreas sem oceano:** Adicionar Rápido > Mundo > **Water Body Exclusion** (ou ligue **Exclusion** num Water Body): dentro do retângulo dele (escale e gire) não há oceano, nem ondas para barcos e nado. Para terra abaixo do nível do mar, docas, o interior de um barco.
 
 --- en
 ```diagram steps
@@ -58,4 +62,8 @@ Turn on **Snow** on the same Rain actor:
 - **Rain with wind:** the rain falls slanted by the **wind** (the Rain actor's Wind Speed and Direction) and what it reaches gets wet: under an eave on the windward side it wets, on the other side it stays dry. The back of a wall stays dry.
 - **Soft edge:** wet turns to dry gradually (a few centimeters, as the splashes do), with no squares or hard stripe.
 - **Runoff:** the water runs over the surface like real water: down ramps and roofs to the edge (and falls) or to a flat place, where it spreads and gathers in the low spots. Where it passes gets wet, more the more water passes, and stays wet while it still runs after the rain.
-- **Drips:** edges that gather water (a roof, a ledge, a branch) drip drops down to the ground, and the water running off them wets where it lands.
+- **Drips:** edges that gather water (a roof, a ledge, a step, a branch) drip: a bead forms hanging from the edge, swells, falls stretching and splashes on the ground, again and again.
+- **How many drops and how fast:** on the Rain actor, **Drop Amount** (up to 4x) and **Fall Speed** (0.25x to 3x; faster tilts less in the wind). The water on the ground still follows the Intensity.
+- **What moves in the rain:** a walking character, a car or a swinging arm leave no dry trail; the ground under them stays wet. The drops stop on top of them, and the drops flung off them fly along their motion (the actor's and the animation's) and fall in an arc.
+- Wet walls get a sheen but never turn into mirrors.
+- **Areas without ocean:** Quick Add > World > **Water Body Exclusion** (or turn on **Exclusion** on a Water Body): inside its rectangle (scale and turn it) there is no ocean, nor waves for boats and swimming. For land below sea level, docks, a boat's inside.

@@ -20,6 +20,7 @@ ia: ai-pro, enemy-chase, patrol, navmesh
 idiomas: language
 importar-tlender: import-tlender, delight
 jobs: job-system
+testes: test-suite
 jogo: package-game, hdr10-output
 landscape: landscape, foliage, landscape-paint
 luz: lights, sky-fog, shadows-pro, many-lights, contact-shadows, cine-camera
