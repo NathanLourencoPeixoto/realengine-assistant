@@ -1,14 +1,15 @@
 # Each area of the engine (a notas-dev/<area>.md) and the Assistant's articles that explain it.
 # tools/assistant_pack.py fails when an area has no line here or names a missing article: a new feature goes into the
 # Assistant with it (RealEngine.md, "Como trabalhar aqui"). The API functions and the controls' tips enter by themselves.
-animacao: animation, animation-pro, skinning, morph-targets, morph-curves
+animacao: animation, animation-pro, skinning, morph-targets, morph-curves, gpu-passes
 assistente: assistant-help
 async: background-tasks, async-api
 audio: sound, audio-pro, metasounds
 blueprints: blueprints-basics, blueprint-functions, blueprint-communication, blueprint-structs-enums, blueprint-debug, construction-script, gameplay-tags, blueprint-debugger, gameplay-tags-list
 content-browser: content-drawer, asset-concept
-debug-viewer: debug-viewer, trace-insights
-orcamento: performance-budget, debug-viewer
+debug-viewer: debug-viewer, trace-insights, gpu-passes
+orcamento: performance-budget, debug-viewer, gpu-passes
+desempenho: gpu-passes, performance-budget, performance, skinning, rt-denoiser
 upscaling: tsr-upscaling, vendor-upscalers, scalability
 demos: demo-games
 editor: editor-layout, place-actors, shortcuts, move-actors, select-actors, undo-duplicate, play-in-editor, viewport-navigation, levels-save, snapping-grid, graph-menu, actor-icons, source-control, plugins
